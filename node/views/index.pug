@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    script(src='/js/bundle.js')
+    div(class="container-fluid text-center")
+        div(class='col-lg-12 p-1')
+            div#overlay
+                div(class="cp-spinner cp-morph")
+            svg#svg(height="575")
+        div(class="col-lg-12 p-0")
+            hr
+        div(class='col-lg-2')
+            h5(class='text-left') Select Gender :
+            input#toggle-on(class='toggle toggle-left genderradio'  name='gender' value='Male' type='radio' checked)
+            label(for='toggle-on' class='btn') Male
+            input#toggle-off(class='toggle toggle-right genderradio'  name='gender' value='Female' type='radio')
+            label(for='toggle-off' class='btn') Female
+        div(class='col-lg-10 p-5')
+            h5(class='text-left') Select Year :
+            input#year(type='range' min=1981 max=2005 step=1 value=1981)
+            output#selected_year(name='selected_year' value='1981') 1981
+

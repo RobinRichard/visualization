@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block body %}
+<!--script from node app-->
+<script src="http://10.25.100.62:3000/js/bundle.js"></script>
+
+<div class="container-fluid text-center">
+  <div class="col-lg-12 p-1">
+    <div id="overlay"><div class="cp-spinner cp-morph"></div></div>
+    <svg  height="575" id="svg"></svg>
+  </div>
+  <div class="col-lg-12 p-0">
+    <hr>
+  </div>
+  <div class="col-lg-2">
+    <h5 class='text-left'> Select Gender :</h5>
+    <input id="toggle-on" class="toggle toggle-left genderradio"  name="gender" value="Male" type="radio" checked>
+    <label for="toggle-on" class="btn">Male</label>
+    <input id="toggle-off" class="toggle toggle-right genderradio" name="gender" value="Female" type="radio">
+    <label for="toggle-off" class="btn">Female</label>
+  </div>
+  <div class="col-lg-10 p-5">
+    <h5 class='text-left'> Select Year :</h5>
+    <input type="range" min=1981 max=2005 step=1 id="year" value=1980>
+    <output name="selected_year" id="selected_year" value="1981">1981</output>
+  </div>
+		
+</div>
+
+
+{% endblock %}
+

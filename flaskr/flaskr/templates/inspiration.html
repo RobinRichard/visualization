@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+<h1 class='text-center'>Inspirations</h3>
+<br>
+<div class="col-lg-12 text-center">
+    <a href='https://bl.ocks.org/alandunning/ab4b0b203f58ce4c42754774c85c0119' target="blank">
+    <img src="{{url_for('static', filename='img/barchart.png')}}" height="350" width="45%"></img>
+    </a>
+</div>
+<div class="col-lg-12 text-center">
+    <iframe src="https://webkul.github.io/csspin/" height="350" width="45%"></iframe>
+</div>
+<div class="col-lg-12 text-center">
+    <iframe src="http://www.cssportal.com/style-input-range/" height="350" width="45%"></iframe>
+</div>
+{% endblock %}

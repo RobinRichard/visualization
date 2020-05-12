@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.cfg
+setup.py
+flaskr/__init__.py
+flaskr/flaskr.py
+flaskr/schema.sql
+flaskr.egg-info/PKG-INFO
+flaskr.egg-info/SOURCES.txt
+flaskr.egg-info/dependency_links.txt
+flaskr.egg-info/requires.txt
+flaskr.egg-info/top_level.txt
+flaskr/static/css/style.css
+flaskr/static/js/d3.slider.js
+flaskr/static/js/d3.v3.min.js
+flaskr/static/js/script.js
+flaskr/templates/index.html
+flaskr/templates/layout.html

@@ -1,0 +1,45 @@
+<!doctype html>
+<title>Flaskr</title>
+<head>
+<!--<link rel=stylesheet type="text/css" href="{{ url_for('static', filename='css/style.css') }}">-->
+<link rel=stylesheet type="text/css" href="http://10.25.100.62:3000/css/mystyle.css">
+<link rel=stylesheet type="text/css" href="http://10.25.100.62:3000/css/csspin.css">
+<link rel=stylesheet type="text/css" href="http://10.25.100.62:3000/css/spinstyle.css">
+<link rel=stylesheet type="text/css" href="http://10.25.100.62:3000/css/loader.css">
+<link rel=stylesheet type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3-queue/3.0.4/d3-queue.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<!--<script src="{{ url_for('static', filename='js/d3.slider.js') }}"></script>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>-->
+
+<!--script from node app-->
+<!--<script src="http://10.25.100.62:3000/js/bundle.js"></script>-->
+
+
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">WEB 3</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/inspiration">Inspiration</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Visualization</h1>
+  <p>Unemployed population</p>
+</div>
+ {% block body %}{% endblock %}
